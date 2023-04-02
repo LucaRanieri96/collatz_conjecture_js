@@ -5,7 +5,8 @@ createApp({
     return {
       inputNumber: "",
       repetition: "",
-      result: ""
+      result: "",
+      numbers:[],
     };
   },
   methods: {
@@ -20,6 +21,7 @@ createApp({
           n = (3 * n) + 1;
         }
         ripetizioni++;
+        this.numbers.push(n);
       }
       this.repetition = ripetizioni;
       this.result = n;
