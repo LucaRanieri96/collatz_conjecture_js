@@ -26,7 +26,7 @@ createApp({
         this.repetition = ripetizioni;
         this.result = n; 
       } else {
-        alert("Il numero deve essere maggiore di 1 per far funzionare la funzione")
+        alert("Il numero deve essere >= 1 per far funzionare la funzione")
       }
     }
   }
