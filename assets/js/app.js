@@ -21,7 +21,6 @@ createApp({
         number++;
       }
       this.result = number;
-      console.log(result);
       console.log(n);
     }
   }
