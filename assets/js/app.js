@@ -8,9 +8,8 @@ createApp({
     };
   },
   methods: {
-    CollatzConjecture: () => {
+    collatzConjecture() {
       let n = parseInt(this.inputNumber);
-
       
       let number = 0;
       while (n !== 1) {
@@ -22,6 +21,8 @@ createApp({
         number++;
       }
       this.result = number;
+      console.log(result);
+      console.log(n);
     }
   }
 }).mount("#app");
