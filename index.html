@@ -21,10 +21,10 @@
       <div class="card p-5">
         <div class="container">
           <input type="number" v-model="inputNumber" placeholder="Inserisci un numero" @keyup.enter="collatzConjecture()">
-          <button @click="collatzConjecture()">Calcola</button>
-          <p>Tutti i numeri generati dal ciclo: {{numbers}}</p>
-          <p class="my-2">Numero di volte che il ciclo si è ripetuto : {{repetition}}</p>
-          <p>Risultato: {{result}}</p>
+          <button @click="collatzConjecture()" class="mb-2">Calcola</button>
+          <p>Tutti i numeri generati dal ciclo: <strong>{{numbers}}</strong> </p>
+          <p class="my-2">Numero di volte che il ciclo si è ripetuto : <strong>{{repetition}}</strong></p>
+          <p>Risultato: <strong>{{result}}</strong></p>
         </div>
       </div>
       <a href="https://it.wikipedia.org/wiki/Congettura_di_Collatz">Link alla congettura di Collatz (Wikipedia)</a>

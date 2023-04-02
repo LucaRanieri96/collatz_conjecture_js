@@ -12,19 +12,22 @@ createApp({
   methods: {
     collatzConjecture() {
       let n = parseInt(this.inputNumber);
-      
-      let ripetizioni = 0;
-      while (n !== 1) {
-        if (n % 2 === 0) {
-          n = n / 2;
-        } else {
-          n = (3 * n) + 1;
+      if (n > 1) {
+        let ripetizioni = 0;
+        while (n !== 1) {
+          if (n % 2 === 0) {
+            n = n / 2;
+          } else {
+            n = (3 * n) + 1;
+          }
+          ripetizioni++;
+          this.numbers.push(n);
         }
-        ripetizioni++;
-        this.numbers.push(n);
+        this.repetition = ripetizioni;
+        this.result = n; 
+      } else {
+        alert("Il numero deve essere maggiore di 1 per far funzionare la funzione")
       }
-      this.repetition = ripetizioni;
-      this.result = n;
     }
   }
 }).mount("#app");
