@@ -4,24 +4,25 @@ createApp({
   data() {
     return {
       inputNumber: "",
-      result: "",
+      repetition: "",
+      result: ""
     };
   },
   methods: {
     collatzConjecture() {
       let n = parseInt(this.inputNumber);
       
-      let number = 0;
+      let ripetizioni = 0;
       while (n !== 1) {
         if (n % 2 === 0) {
           n = n / 2;
         } else {
           n = (3 * n) + 1;
         }
-        number++;
+        ripetizioni++;
       }
-      this.result = number;
-      console.log(n);
+      this.repetition = ripetizioni;
+      this.result = n;
     }
   }
 }).mount("#app");

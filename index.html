@@ -16,17 +16,17 @@
 <body>
   <div id="app" class="text-light text-center">
     <h1>Congettura di Collatz</h1>
+    
     <div class="container w-25">
       <div class="card p-5">
         <div class="container">
-
           <input type="number" v-model="inputNumber" placeholder="Inserisci un numero">
           <button @click="collatzConjecture()">Calcola</button>
-          <p class="my-2">Risultato: {{result}}</p>
-
+          <p class="my-2">Numero di volte che il ciclo si è ripetuto : {{repetition}}</p>
+          <p>Risultato: {{result}}</p>
         </div>
-
       </div>
+      <a href="https://it.wikipedia.org/wiki/Congettura_di_Collatz">Link alla congettura di Collatz (Wikipedia)</a>
 
     </div>
   </div>
